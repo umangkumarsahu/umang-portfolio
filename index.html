@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Umang — developer portfolio: projects, skills, experience, and contact." />
+  <title>Umang — Developer Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23fff' stroke='%23f2c134' stroke-width='6'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-size='26' font-weight='800' fill='%230b2147' font-family='Inter,Arial'%3EU%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="canonical" href="https://example.com/" />
+  <meta property="og:title" content="Umang — Developer Portfolio" />
+  <meta property="og:description" content="Projects, skills, experience, and ways to reach me." />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Umang",
+    "url":"https://example.com/",
+    "jobTitle":"Software Developer",
+    "sameAs":[]
+  }</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="#home" class="brand" aria-label="Umang home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Umang</span>
+      </a>
+      <div class="header-actions">
+        <button id="themeToggle" class="menu-toggle" aria-label="Toggle theme">Theme</button>
+        <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="primaryNav">Menu</button>
+      </div>
+      <nav id="primaryNav">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Hi, I'm Umang.</h1>
+          <p>Full‑stack developer focused on building delightful, performant products.</p>
+          <div class="cta">
+            <a id="resumeLink" class="btn outline" href="#" data-hidden="true">Resume</a>
+            <a class="btn primary" href="#projects">View Projects</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="globe"></div>
+          <div class="plane"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p class="muted">Primary tools and technologies</p>
+      </div>
+      <ul class="pill-list">
+        <li>JavaScript</li><li>TypeScript</li><li>React</li><li>Node.js</li><li>Next.js</li><li>Python</li><li>SQL</li><li>Tailwind</li><li>Docker</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <div class="search">
+          <input id="projectSearch" type="text" placeholder="Search projects" />
+        </div>
+      </div>
+      <div class="cards" id="projectGrid">
+        <article class="package reveal project" data-tags="react,api,frontend">
+          <img class="cover" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop" alt="Project dashboard" />
+          <div class="content">
+            <h3>Realtime Dashboard</h3>
+            <p>React + WebSocket dashboard with live metrics and alerts.</p>
+            <div class="meta">
+              <span class="price">React</span>
+              <a class="btn outline" href="#" target="_blank" rel="noopener">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="package reveal project" data-tags="node,api,backend">
+          <img class="cover" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop" alt="API server" />
+          <div class="content">
+            <h3>Booking API</h3>
+            <p>REST API with auth, rate limiting, and OpenAPI docs.</p>
+            <div class="meta">
+              <span class="price">Node.js</span>
+              <a class="btn outline" href="#" target="_blank" rel="noopener">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="package reveal project" data-tags="nextjs,ssr,frontend">
+          <img class="cover" src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=1600&auto=format&fit=crop" alt="Portfolio site" />
+          <div class="content">
+            <h3>Portfolio Starter</h3>
+            <p>SEO‑ready Next.js starter with theming and MDX content.</p>
+            <div class="meta">
+              <span class="price">Next.js</span>
+              <a class="btn outline" href="#" target="_blank" rel="noopener">View</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section container">
+      <div class="section-head">
+        <h2>Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Software Developer — Company A</h3>
+            <p class="muted">2023 — Present</p>
+            <p>Built internal tools and shipping user‑facing features improving conversion by 12%.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Frontend Engineer — Company B</h3>
+            <p class="muted">2021 — 2023</p>
+            <p>Led migration to TypeScript and design system adoption across squads.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="muted">Have an opportunity or idea? Let's talk.</p>
+      </div>
+      <form id="contactForm" class="contact-form" data-form-endpoint="">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+        <div class="cta">
+          <button class="btn primary" type="submit">Send</button>
+          <button id="copyEmail" class="btn outline" type="button">Copy Email</button>
+        </div>
+      </form>
+      <p id="formResult" class="muted" role="status"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Umang — All rights reserved</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="main.js"></script>
+</body>
+</html>
+
